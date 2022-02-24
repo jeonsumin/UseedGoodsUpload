@@ -89,6 +89,7 @@
 				DEE9A98F27C7AF070003FFCA /* AppDelegate.swift */,
 				DEE9A99127C7AF070003FFCA /* SceneDelegate.swift */,
 				DEE9A9B627C7B3680003FFCA /* Entity */,
+				DEE9A9CF27C7C5B70003FFCA /* Model */,
 				DEE9A9AF27C7B1D00003FFCA /* ViewController */,
 				DEE9A9C927C7BD600003FFCA /* View */,
 				DEE9A99827C7AF080003FFCA /* Assets.xcassets */,
@@ -102,11 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				DEE9A9BC27C7B5590003FFCA /* BaseViewController.swift */,
-				DEE9A9AB27C7AF4C0003FFCA /* MainViewController.swift */,
-				DEE9A9AD27C7AFA80003FFCA /* MainViewModel.swift */,
-				DEE9A9CC27C7C19C0003FFCA /* MainModel.swift */,
-				DEE9A9BE27C7B9340003FFCA /* Category */,
 				DEE9A9CA27C7BDAF0003FFCA /* BaseTableViewCell.swift */,
+				DEE9A9CE27C7C4E60003FFCA /* Main */,
+				DEE9A9BE27C7B9340003FFCA /* Category */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -131,8 +130,8 @@
 		DEE9A9BE27C7B9340003FFCA /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				DEE9A9B827C7B3B60003FFCA /* CategoryViewModel.swift */,
 				DEE9A9BA27C7B4FB0003FFCA /* CategoryListViewController.swift */,
+				DEE9A9B827C7B3B60003FFCA /* CategoryViewModel.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -140,8 +139,8 @@
 		DEE9A9C327C7BC640003FFCA /* PriceTextFieldCell */ = {
 			isa = PBXGroup;
 			children = (
-				DEE9A9BF27C7B94E0003FFCA /* PriceTextFieldCellViewModel.swift */,
 				DEE9A9C127C7BA910003FFCA /* PriceTextFieldCell.swift */,
+				DEE9A9BF27C7B94E0003FFCA /* PriceTextFieldCellViewModel.swift */,
 			);
 			path = PriceTextFieldCell;
 			sourceTree = "<group>";
@@ -163,6 +162,23 @@
 				DEE9A9C827C7BCDB0003FFCA /* DetailWriteFormCell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DEE9A9CE27C7C4E60003FFCA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEE9A9AB27C7AF4C0003FFCA /* MainViewController.swift */,
+				DEE9A9AD27C7AFA80003FFCA /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEE9A9CF27C7C5B70003FFCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEE9A9CC27C7C19C0003FFCA /* MainModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

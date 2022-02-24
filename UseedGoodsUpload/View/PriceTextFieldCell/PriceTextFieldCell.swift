@@ -10,20 +10,10 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class PriceTextFieldCell: UITableViewCell {
-    let disposeBag = DisposeBag()
+class PriceTextFieldCell: BaseTableViewCell {
     let priceInputField = UITextField()
     let freeShareButton = UIButton()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        attribute()
-        layout()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     func bind(_ viewModel: PriceTextFieldCellViewModel){
         viewModel.showFreeShareButton
             .map{ !$0 }
@@ -44,7 +34,7 @@ class PriceTextFieldCell: UITableViewCell {
             .disposed(by: disposeBag)
     }
     
-    private func attribute(){
+    override func attribute() {
         freeShareButton.setTitle("무료나눔", for: .normal)
         freeShareButton.setTitleColor(.orange, for: .normal)
         freeShareButton.setImage(UIImage(systemName: "xmark"), for: .normal)
@@ -62,7 +52,7 @@ class PriceTextFieldCell: UITableViewCell {
         priceInputField.font = .systemFont(ofSize: 17)
     }
     
-    private func layout(){
+    override func layout() {
         [priceInputField,freeShareButton].forEach{contentView.addSubview($0)}
         
         priceInputField.snp.makeConstraints{

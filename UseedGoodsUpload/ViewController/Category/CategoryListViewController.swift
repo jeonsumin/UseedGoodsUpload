@@ -14,14 +14,6 @@ class CategoryListViewController: BaseViewController {
     
     let tableView = UITableView()
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     func bind(_ viewModel: CategoryViewModel){
         viewModel.cellData
             .drive(tableView.rx.items) { tv,row,data in
